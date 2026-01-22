@@ -1,0 +1,153 @@
+:root {
+  --primary: #2563eb;
+  --success: #10b981;
+  --danger: #ef4444;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --bg-page: #f8fafc;
+  --border-color: #e2e8f0;
+}
+
+
+.customer-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--bg-page);
+  min-height: 100vh;
+}
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 1.875rem;
+  color: var(--text-main);
+  margin: 0;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 4px 0 0 0;
+}
+
+.stats-pill {
+  background: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Tarjeta y Tabla */
+.table-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  table-layout: auto;
+}
+
+
+.modern-table th, 
+.modern-table td {
+  padding: 1.25rem 1rem;
+  vertical-align: middle; 
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modern-table th {
+  background: #f8fafc;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+
+.col-code span {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background: #eff6ff;
+  color: var(--primary);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.col-main .name {
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.col-main .sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  height: 26px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.status-indicator.is-active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-indicator.is-inactive {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+.tag-type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.modern-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.font-bold { font-weight: 700; }
+.text-blue { color: var(--primary); }
